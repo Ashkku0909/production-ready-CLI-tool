@@ -32,9 +32,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Ashkku0909/code-lens"
-Repository = "https://github.com/Ashkku0909/code-lens"
-Issues = "https://github.com/Ashkku0909/code-lens/issues"
+Homepage = "https://github.com/Ashkku0909/production-ready-CLI-tool"
+Repository = "https://github.com/Ashkku0909/production-ready-CLI-tool"
+Issues = "https://github.com/Ashkku0909/production-ready-CLI-tool/issues"
 
 [project.scripts]
 lens = "code_lens.cli:app"
