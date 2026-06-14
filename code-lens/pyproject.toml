@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-lens"
+version = "0.1.0"
+description = "A fast, terminal-native AI assistant that captures code snippets, stack traces, and error messages from your clipboard or stdin, sends them to Google's Gemini API for intelligent analysis, and returns actionable fixes and explanations directly to your console — no context-switching required."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Huvan", email = "huvan@example.com"},
+]
+keywords = ["cli", "developer-tools", "ai", "gemini", "code-assistant"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Environment :: Console",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+dependencies = [
+    "typer>=0.9.0",
+    "google-genai>=1.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ashkku0909/code-lens"
+Repository = "https://github.com/Ashkku0909/code-lens"
+Issues = "https://github.com/Ashkku0909/code-lens/issues"
+
+[project.scripts]
+lens = "code_lens.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
